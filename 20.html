@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+    function repeatChar(str, char) {
+  var count = 0;
+  for (var i = 0; i < str.length; i++) {
+    if (str[i] === char) {
+      count++;
+    }
+  }
+  return count;
+}
+
+
+var string = "alex mercer madrasa rashed2 emad hala";
+var charToCount = "a";
+var result = repeatChar(string, charToCount);
+
+console.log(`The character "${charToCount}" repeats ${result} times (using for loop)`);
+    
+/*
+function repeatCharWithWhile(str, char) {
+  var count = 0;
+  var i = 0;
+
+  while (i < str.length) {
+    if (str[i] === char) {
+      count++;
+    }
+    i++;
+  }
+
+  return count;
+}
+
+// Example usage:
+var string = "alex mercer madrasa rashed2 emad hala";
+var charToCount = "a";
+var resultWithWhile = repeatCharWithWhile(string, charToCount);
+
+console.log(`The character "${charToCount}" repeats ${resultWithWhile} times (using while loop)`);
+Both functions iterate through the string, checking if each character is equal to the specified character, and incrementing a count accordingly. They then return the count of occurrences.
+
+
+
+
+
+
+
+*/
+</script>  
+</body>
+</html>

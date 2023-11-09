@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script> 
+
+function shorterInArray(arr) {
+  if (arr.length === 0) {
+    return "Array is empty";
+  }
+
+  var shortest = arr[0];
+  for (var i = 1; i < arr.length; i++) {
+    if (arr[i].length < shortest.length) {
+      shortest = arr[i];
+    }
+  }
+
+  return shortest;
+}
+
+var strings = ["alex", "mercer", "madrasa", "rashed2", "emad", "hala"];
+var result = shorterInArray(strings);
+
+console.log("Shortest string in the array (using for loop):", result);
+
+
+/*
+
+function shorterInArrayWithWhile(arr) {
+  if (arr.length === 0) {
+    return "Array is empty";
+  }
+
+  var shortest = arr[0];
+  var i = 1;
+
+  while (i < arr.length) {
+    if (arr[i].length < shortest.length) {
+      shortest = arr[i];
+    }
+    i++;
+  }
+
+  return shortest;
+}
+
+// Example usage:
+var strings = ["alex", "mercer", "madrasa", "rashed2", "emad", "hala"];
+var resultWithWhile = shorterInArrayWithWhile(strings);
+
+console.log("Shortest string in the array (using while loop):", resultWithWhile);*/
+
+
+</script>  
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script> 
+
+function removeFromArrayWithWhile(arr, elementToRemove) {
+  var newArray = [];
+  var i = 0;
+
+  while (i < arr.length) {
+    if (arr[i] !== elementToRemove) {
+      newArray.push(arr[i]);
+    }
+    i++;
+  }
+
+  return newArray;
+}
+
+
+var nums = [1, 2, 3, 8, 9];
+var resultWithWhile = removeFromArrayWithWhile(nums, 8);
+
+console.log("Array after removing element (using while loop):", resultWithWhile);
+
+
+
+/*
+function removeFromArray(arr, elementToRemove) {
+  var newArray = [];
+
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] !== elementToRemove) {
+      newArray.push(arr[i]);
+    }
+  }
+
+  return newArray;
+}
+
+
+var nums = [1, 2, 3, 8, 9];
+var result = removeFromArray(nums, 8);
+
+console.log("Array after removing element:", result);*/
+</script>  
+</body>
+</html>

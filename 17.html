@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script> 
+function aveArray(arr) {
+  if (arr.length === 0) {
+    return "Array is empty";
+  }
+
+  var sum = 0;
+  for (var i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+
+  return sum / arr.length;
+}
+
+var nums = [1, 2, 3, 8, 9];
+var result = aveArray(nums);
+
+console.log("Average of the array elements (using for loop):", result);
+
+
+
+
+/*
+function aveArrayWithWhile(arr) {
+  if (arr.length === 0) {
+    return "Array is empty";
+  }
+
+  var sum = 0;
+  var i = 0;
+
+  while (i < arr.length) {
+    sum += arr[i];
+    i++;
+  }
+
+  return sum / arr.length;
+}
+
+// Example usage:
+var nums = [1, 2, 3, 8, 9];
+var resultWithWhile = aveArrayWithWhile(nums);
+
+console.log("Average of the array elements (using while loop):", resultWithWhile);
+
+
+*/
+
+</script>  
+</body>
+</html>
